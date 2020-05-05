@@ -1,4 +1,7 @@
 .navbar {
+  position: relative;
+  z-index: 10;
+
   .navbar__inside {
     .navbar__logo {
       img {
@@ -43,6 +46,20 @@
         z-index: 0;
         left: -180px;
       }
+
+      .navbar__logo::after {
+        position: absolute;
+        content: "";
+        background: #fff;
+        width: 740px;
+        height: 137px;
+        top: -22px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        left: -790px;
+      }
+
       .navbar__logo {
         position: relative;
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Damion|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Damion|Roboto:200,300,400,500,700&display=swap");
 /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -86,6 +86,10 @@ body {
     margin: 0 auto;
     width: 1022px; } }
 
+.navbar {
+  position: relative;
+  z-index: 10; }
+
 @media only screen and (min-width: 48rem) {
   .navbar .navbar__inside {
     padding: 20px 0;
@@ -101,6 +105,17 @@ body {
       background-size: contain;
       z-index: 0;
       left: -180px; }
+    .navbar .navbar__inside .navbar__logo::after {
+      position: absolute;
+      content: "";
+      background: #fff;
+      width: 740px;
+      height: 137px;
+      top: -22px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 0;
+      left: -790px; }
     .navbar .navbar__inside .navbar__logo {
       position: relative; }
       .navbar .navbar__inside .navbar__logo img {
@@ -338,3 +353,100 @@ body {
 
 .text-right {
   text-align: right; }
+
+.site-header {
+  width: 100%;
+  height: 700px;
+  margin-top: -137px; }
+  .site-header .site-header__inside {
+    width: inherit;
+    height: inherit; }
+    .site-header .site-header__inside .site-header__slide {
+      height: inherit;
+      width: inherit; }
+      .site-header .site-header__inside .site-header__slide .side-header__slide-items {
+        height: inherit;
+        width: inherit; }
+        .site-header .site-header__inside .site-header__slide .side-header__slide-items .side-header__slide-item {
+          height: 700px;
+          width: 100%;
+          background-image: url(../img/site-header-background.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .site-header .site-header__inside .site-header__slide .side-header__slide-items .side-header__slide-item .side-header__slide-item-inside {
+            position: relative;
+            top: 40px; }
+            .site-header .site-header__inside .site-header__slide .side-header__slide-items .side-header__slide-item .side-header__slide-item-inside h1 {
+              font-family: Damion, sans-serif;
+              font-size: 102px;
+              color: #fff;
+              margin-bottom: -14px; }
+            .site-header .site-header__inside .site-header__slide .side-header__slide-items .side-header__slide-item .side-header__slide-item-inside .saude-vida {
+              font-family: Roboto, sans-serif;
+              color: #72b9f5;
+              font-size: 45px;
+              padding: 10px 38px;
+              margin-left: 110px;
+              width: 337px;
+              font-weight: 200;
+              background: #fff;
+              border-radius: 50px; }
+
+.slick-next {
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 104px;
+  z-index: 11;
+  margin: auto;
+  bottom: 0;
+  height: 50px;
+  right: 200px;
+  background-image: url(../img/arrow-right.png);
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  color: transparent; }
+
+.slick-prev {
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 104px;
+  z-index: 11;
+  margin: auto;
+  bottom: 0;
+  height: 50px;
+  left: 200px;
+  background-image: url(../img/arrow-left.png);
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  color: transparent; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px; }
+  .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 12px;
+    color: transparent;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    outline: none;
+    cursor: pointer; }
+  .slick-dots li.slick-active button {
+    background: #72b9f5; }

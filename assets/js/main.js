@@ -1,0 +1,3 @@
+$(".jsSiteHeaderSlide").slick({
+  dots: true,
+});
