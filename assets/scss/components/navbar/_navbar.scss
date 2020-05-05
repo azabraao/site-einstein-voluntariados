@@ -1,0 +1,129 @@
+.navbar {
+  .navbar__inside {
+    .navbar__logo {
+      img {
+      }
+    }
+    .navbar__menu {
+      .navbar__hambuguer {
+      }
+      .menu {
+        .menu__items {
+          .menu__item {
+          }
+          .menu__item.link {
+          }
+          .menu__item.link.voluntario {
+          }
+          .menu__item.link.doe {
+          }
+          .menu__item.search {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-up) {
+  .navbar {
+    .navbar__inside {
+      padding: 20px 0;
+      display: flex;
+
+      .navbar__logo::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/box-logo.png);
+        width: 740px;
+        height: 140px;
+        top: -22px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        left: -180px;
+      }
+      .navbar__logo {
+        position: relative;
+
+        img {
+          margin-left: -20px;
+          width: 212px;
+          position: relative;
+        }
+      }
+      .navbar__menu {
+        .navbar__hambuguer {
+        }
+        .menu {
+          height: 100%;
+
+          .menu__items {
+            display: flex;
+            height: 88%;
+            align-items: center;
+            padding-left: 94px;
+
+            .menu__item {
+              font-family: $font-secondary;
+              padding: 6px;
+              border-radius: 8px;
+              margin-right: 7px;
+              min-height: 33px;
+              max-height: 33px;
+              height: 33px;
+              display: flex;
+              align-items: center;
+
+              a {
+                text-decoration: none;
+                color: $white;
+              }
+            }
+            .menu__item.link {
+              background: $info-dark;
+              font-size: 16px;
+              padding: 9px;
+            }
+            .menu__item.link.voluntario {
+              font-family: $font-primary;
+              padding: 6px 15px;
+              font-size: 20px;
+            }
+            .menu__item.link.doe {
+              font-size: 20px;
+              font-family: $font-primary;
+              padding: 6px 15px;
+              background: $warning;
+            }
+            .menu__item.search {
+              border-radius: 20px;
+              border: 1.5px solid #fff;
+              padding: 0 10px;
+              width: 159px;
+
+              .search-input {
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                  background: transparent;
+                  border: none;
+                  outline: none;
+                  color: $white;
+                  width: 100%;
+                }
+
+                .search-input__icon {
+                  width: 17px;
+                  height: 17px;
+                  background-image: url(../img/icon-search.png);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

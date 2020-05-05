@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Damion|Roboto&display=swap");
 /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -69,7 +69,8 @@ th {
   padding: 0;
   text-align: left; }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth; }
 
 .container {
@@ -82,7 +83,81 @@ html, body {
 
 @media only screen and (min-width: 75rem) {
   .container {
+    margin: 0 auto;
     width: 1022px; } }
+
+@media only screen and (min-width: 48rem) {
+  .navbar .navbar__inside {
+    padding: 20px 0;
+    display: flex; }
+    .navbar .navbar__inside .navbar__logo::before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/box-logo.png);
+      width: 740px;
+      height: 140px;
+      top: -22px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 0;
+      left: -180px; }
+    .navbar .navbar__inside .navbar__logo {
+      position: relative; }
+      .navbar .navbar__inside .navbar__logo img {
+        margin-left: -20px;
+        width: 212px;
+        position: relative; }
+    .navbar .navbar__inside .navbar__menu .menu {
+      height: 100%; }
+      .navbar .navbar__inside .navbar__menu .menu .menu__items {
+        display: flex;
+        height: 88%;
+        align-items: center;
+        padding-left: 94px; }
+        .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item {
+          font-family: Roboto, sans-serif;
+          padding: 6px;
+          border-radius: 8px;
+          margin-right: 7px;
+          min-height: 33px;
+          max-height: 33px;
+          height: 33px;
+          display: flex;
+          align-items: center; }
+          .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item a {
+            text-decoration: none;
+            color: #fff; }
+        .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.link {
+          background: #005a9b;
+          font-size: 16px;
+          padding: 9px; }
+        .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.link.voluntario {
+          font-family: Damion, sans-serif;
+          padding: 6px 15px;
+          font-size: 20px; }
+        .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.link.doe {
+          font-size: 20px;
+          font-family: Damion, sans-serif;
+          padding: 6px 15px;
+          background: #f8b506; }
+        .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.search {
+          border-radius: 20px;
+          border: 1.5px solid #fff;
+          padding: 0 10px;
+          width: 159px; }
+          .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.search .search-input {
+            display: flex;
+            justify-content: space-between; }
+            .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.search .search-input input {
+              background: transparent;
+              border: none;
+              outline: none;
+              color: #fff;
+              width: 100%; }
+            .navbar .navbar__inside .navbar__menu .menu .menu__items .menu__item.search .search-input .search-input__icon {
+              width: 17px;
+              height: 17px;
+              background-image: url(../img/icon-search.png); } }
 
 .bg-primary {
   background-color: ""; }
@@ -121,13 +196,13 @@ html, body {
   background-color: ""; }
 
 .bg-black {
-  background-color: ""; }
+  background-color: #000; }
 
 .bg-white {
-  background-color: ""; }
+  background-color: #fff; }
 
 .bg-grey {
-  background-color: ""; }
+  background-color: #cacbcb; }
 
 .bg-grey-light {
   background-color: ""; }
@@ -136,7 +211,7 @@ html, body {
   background-color: ""; }
 
 .bg-warning {
-  background-color: ""; }
+  background-color: #f8b506; }
 
 .bg-warning-light {
   background-color: ""; }
@@ -196,13 +271,13 @@ html, body {
   color: ""; }
 
 .color-black {
-  color: ""; }
+  color: #000; }
 
 .color-white {
-  color: ""; }
+  color: #fff; }
 
 .color-grey {
-  color: ""; }
+  color: #cacbcb; }
 
 .color-grey-light {
   color: ""; }
@@ -211,7 +286,7 @@ html, body {
   color: ""; }
 
 .color-warning {
-  color: ""; }
+  color: #f8b506; }
 
 .color-warning-light {
   color: ""; }
@@ -235,10 +310,10 @@ html, body {
   color: ""; }
 
 .font-primary {
-  font-family: "Nunito", "Open Sans", sans-serif; }
+  font-family: Damion, sans-serif; }
 
 .font-secondary {
-  font-family: "Open Sans", sans-serif; }
+  font-family: Roboto, sans-serif; }
 
 .text-bolder {
   font-weight: bolder; }
