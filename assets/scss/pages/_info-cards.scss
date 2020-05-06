@@ -1,15 +1,46 @@
 .info-cards {
+  padding: 70px 0;
+
   .info-cards__inside {
     .info-cards__items {
+      display: flex;
+      justify-content: space-between;
+
       .info-card {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ccc;
+        height: 180px;
+        width: 310px;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+
         .info-card__inside {
+          font-family: $font-primary;
+          font-size: 40px;
+          text-align: center;
+          color: $white;
+          width: 160px;
+          line-height: 31px;
         }
       }
       .info-card.voluntario {
+        background-image: url(../img/bg-seja-voluntario.png);
       }
       .info-card.faq {
+        background-image: url(../img/bg-perguntas-frequentes.png);
       }
       .info-card.apoiador {
+        background-image: url(../img/bg-seja-apoiador.png);
+
+        .info-card__inside {
+          position: relative;
+          right: -20px;
+        }
       }
     }
   }

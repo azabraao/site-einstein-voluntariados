@@ -517,6 +517,40 @@ body {
           position: relative !important;
           bottom: 0 !important; }
 
+.info-cards {
+  padding: 70px 0; }
+  .info-cards .info-cards__inside .info-cards__items {
+    display: flex;
+    justify-content: space-between; }
+    .info-cards .info-cards__inside .info-cards__items .info-card {
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ccc;
+      height: 180px;
+      width: 310px;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0; }
+      .info-cards .info-cards__inside .info-cards__items .info-card .info-card__inside {
+        font-family: Damion, sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        width: 160px;
+        line-height: 31px; }
+    .info-cards .info-cards__inside .info-cards__items .info-card.voluntario {
+      background-image: url(../img/bg-seja-voluntario.png); }
+    .info-cards .info-cards__inside .info-cards__items .info-card.faq {
+      background-image: url(../img/bg-perguntas-frequentes.png); }
+    .info-cards .info-cards__inside .info-cards__items .info-card.apoiador {
+      background-image: url(../img/bg-seja-apoiador.png); }
+      .info-cards .info-cards__inside .info-cards__items .info-card.apoiador .info-card__inside {
+        position: relative;
+        right: -20px; }
+
 .site-header:after {
   position: absolute;
   content: "";
