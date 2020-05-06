@@ -175,6 +175,27 @@ body {
               height: 17px;
               background-image: url(../img/icon-search.png); } }
 
+.site-footer {
+  padding: 60px 0;
+  background: #005a9b; }
+  .site-footer .site-footer__inside .site-footer__content {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 24px; }
+    .site-footer .site-footer__inside .site-footer__content strong {
+      display: block;
+      font-size: 20px; }
+  .site-footer .site-footer__inside .site-footer__social {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; }
+    .site-footer .site-footer__inside .site-footer__social img {
+      margin: 10px;
+      width: 30px; }
+
 .bg-primary {
   background-color: ""; }
 
