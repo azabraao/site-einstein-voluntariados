@@ -80,7 +80,7 @@
   }
 }
 
-.slick-next {
+.site-header__slide-next {
   cursor: pointer;
   outline: none;
   position: absolute;
@@ -95,10 +95,12 @@
   border: none;
   background-repeat: no-repeat;
   color: transparent;
+  width: 30px;
 }
 
-.slick-prev {
+.site-header__slide-prev {
   cursor: pointer;
+  width: 30px;
   outline: none;
   position: absolute;
   top: 104px;
