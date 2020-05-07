@@ -15,6 +15,11 @@
   background-size: 100% 100%;
 }
 
+.site-header.size-2:after {
+  width: 1000px;
+  height: 150px;
+}
+
 .site-header {
   position: relative;
   width: 100%;
@@ -24,6 +29,21 @@
   .site-header__inside {
     width: inherit;
     height: inherit;
+
+    .site-header__image {
+      height: 700px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .site-header__image.capoeira {
+      background-image: url(../img/capoeira.png);
+    }
 
     .site-header__slide {
       height: inherit;
