@@ -196,6 +196,130 @@ body {
       margin: 10px;
       width: 30px; }
 
+.info-cards {
+  padding: 70px 0; }
+  .info-cards .info-cards__inside .info-cards__items {
+    display: flex;
+    justify-content: space-between; }
+    .info-cards .info-cards__inside .info-cards__items .info-card {
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ccc;
+      height: 180px;
+      width: 310px;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0; }
+      .info-cards .info-cards__inside .info-cards__items .info-card .info-card__inside {
+        font-family: Damion, sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        width: 160px;
+        line-height: 31px; }
+    .info-cards .info-cards__inside .info-cards__items .info-card.voluntario {
+      background-image: url(../img/bg-seja-voluntario.png); }
+    .info-cards .info-cards__inside .info-cards__items .info-card.faq {
+      background-image: url(../img/bg-perguntas-frequentes.png); }
+    .info-cards .info-cards__inside .info-cards__items .info-card.apoiador {
+      background-image: url(../img/bg-seja-apoiador.png); }
+      .info-cards .info-cards__inside .info-cards__items .info-card.apoiador .info-card__inside {
+        position: relative;
+        right: -20px; }
+
+.apoiadores {
+  padding: 60px 0; }
+  .apoiadores .apoiadores__header {
+    text-align: center;
+    margin-bottom: 30px; }
+    .apoiadores .apoiadores__header h2 {
+      font-family: Damion, sans-serif;
+      font-size: 40px;
+      color: #005a9b; }
+  .apoiadores .apoiadores__slide {
+    padding: 0 70px;
+    position: relative; }
+    .apoiadores .apoiadores__slide .apoiadores__slide-items .apoiadores__slide-item .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .apoiadores .apoiadores__slide .apoiadores__slide-buttons {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      left: 0; }
+      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-prev,
+      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-next {
+        width: 20px;
+        height: 30px;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-size: contain; }
+      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-prev {
+        background-image: url(../img/arrow-left-grey.png); }
+      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-next {
+        background-image: url(../img/arrow-right-grey.png); }
+
+.einstein-numeros {
+  background: #ebf4fd;
+  padding: 60px 0 70px; }
+  .einstein-numeros .einstein-numeros__items {
+    display: flex;
+    justify-content: space-between; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.atendimentos span.first {
+      position: absolute;
+      top: 30px; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.atendimentos span.second {
+      position: absolute;
+      bottom: 0px; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.setores span {
+      position: absolute;
+      bottom: 0px; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.setores strong {
+      color: #f8b506; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios span.first {
+      position: absolute;
+      top: 26px;
+      right: -9px; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios span.second {
+      position: absolute;
+      bottom: 0;
+      left: 20px; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios strong {
+      color: #005a9b; }
+    .einstein-numeros .einstein-numeros__items .einstein-numeros__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .einstein-numeros .einstein-numeros__items .einstein-numeros__item span {
+        color: #005a9b;
+        font-family: Roboto, sans-serif;
+        font-size: 30px;
+        font-weight: 200; }
+      .einstein-numeros .einstein-numeros__items .einstein-numeros__item strong {
+        color: #72b9f5;
+        font-family: Damion, sans-serif;
+        font-size: 120px; }
+        .einstein-numeros .einstein-numeros__items .einstein-numeros__item strong span {
+          color: inherit;
+          font-family: inherit;
+          font-size: inherit;
+          position: relative !important;
+          bottom: 0 !important; }
+
 .bg-primary {
   background-color: ""; }
 
@@ -376,202 +500,6 @@ body {
 .text-right {
   text-align: right; }
 
-.apoiadores {
-  padding: 60px 0; }
-  .apoiadores .apoiadores__header {
-    text-align: center;
-    margin-bottom: 30px; }
-    .apoiadores .apoiadores__header h2 {
-      font-family: Damion, sans-serif;
-      font-size: 40px;
-      color: #005a9b; }
-  .apoiadores .apoiadores__slide {
-    padding: 0 70px;
-    position: relative; }
-    .apoiadores .apoiadores__slide .apoiadores__slide-items .apoiadores__slide-item .row {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-    .apoiadores .apoiadores__slide .apoiadores__slide-buttons {
-      position: absolute;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      height: 100%;
-      justify-content: space-between;
-      left: 0; }
-      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-prev,
-      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-next {
-        width: 20px;
-        height: 30px;
-        outline: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        background-repeat: no-repeat;
-        color: transparent;
-        background-size: contain; }
-      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-prev {
-        background-image: url(../img/arrow-left-grey.png); }
-      .apoiadores .apoiadores__slide .apoiadores__slide-buttons .apoiadores__slide-button-next {
-        background-image: url(../img/arrow-right-grey.png); }
-
-@media only screen and (min-width: 75rem) {
-  .doe-opts {
-    padding: 70px 0; }
-    .doe-opts .doe-opts__inside .doe-opts__items {
-      display: flex;
-      justify-content: space-between; }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.hospital .doe-opts__item-icon {
-        background-image: url(../img/icon-hospitalar.png); }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.hospital .doe-opts__item-title h3 span {
-        position: absolute;
-        left: 70px;
-        top: -4px; }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.paraisopolis .doe-opts__item-icon {
-        background-image: url(../img/icon-paraisopolis.png); }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.paraisopolis .doe-opts__item-title h3 span {
-        position: absolute;
-        left: 56px;
-        top: -7px; }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.einstein .doe-opts__item-icon {
-        background-image: url(../img/icon-residencial.png); }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.einstein .doe-opts__item-title h3 span {
-        position: absolute;
-        left: 90px;
-        top: -5px; }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.recursos .doe-opts__item-icon {
-        background-image: url(../img/icon-recursos.png); }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.recursos .doe-opts__item-title h3 span {
-        position: absolute;
-        left: 80px; }
-      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item {
-        max-width: 300px;
-        text-align: center;
-        padding: 20px 30px; }
-        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-icon {
-          width: 90px;
-          height: 90px;
-          margin: 0 auto;
-          margin-bottom: 10px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain; }
-        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title {
-          position: relative; }
-          .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title h3 span {
-            font-family: Roboto, sans-serif;
-            color: #72b9f5;
-            font-size: 20px;
-            display: block; }
-          .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title h3 strong {
-            display: block;
-            font-family: Damion, sans-serif;
-            font-size: 40px;
-            color: #f88f9e;
-            margin-top: 20px; }
-        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-text {
-          font-size: 15px;
-          font-family: Roboto, sans-serif;
-          color: #005a9b; }
-    .doe-opts .doe-opts__inside .doe-opts__cta {
-      padding-top: 20px; }
-      .doe-opts .doe-opts__inside .doe-opts__cta a.doe-opts__cta-button {
-        width: 100%;
-        display: block;
-        text-decoration: none;
-        font-size: 35px;
-        color: #fff;
-        background: #72b9f5;
-        text-align: center;
-        border-radius: 10px;
-        padding: 5px;
-        font-family: Damion, sans-serif; } }
-
-.einstein-numeros {
-  background: #ebf4fd;
-  padding: 60px 0 70px; }
-  .einstein-numeros .einstein-numeros__items {
-    display: flex;
-    justify-content: space-between; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.atendimentos span.first {
-      position: absolute;
-      top: 30px; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.atendimentos span.second {
-      position: absolute;
-      bottom: 0px; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.setores span {
-      position: absolute;
-      bottom: 0px; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.setores strong {
-      color: #f8b506; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios span.first {
-      position: absolute;
-      top: 26px;
-      right: -9px; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios span.second {
-      position: absolute;
-      bottom: 0;
-      left: 20px; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item.voluntarios strong {
-      color: #005a9b; }
-    .einstein-numeros .einstein-numeros__items .einstein-numeros__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative; }
-      .einstein-numeros .einstein-numeros__items .einstein-numeros__item span {
-        color: #005a9b;
-        font-family: Roboto, sans-serif;
-        font-size: 30px;
-        font-weight: 200; }
-      .einstein-numeros .einstein-numeros__items .einstein-numeros__item strong {
-        color: #72b9f5;
-        font-family: Damion, sans-serif;
-        font-size: 120px; }
-        .einstein-numeros .einstein-numeros__items .einstein-numeros__item strong span {
-          color: inherit;
-          font-family: inherit;
-          font-size: inherit;
-          position: relative !important;
-          bottom: 0 !important; }
-
-.info-cards {
-  padding: 70px 0; }
-  .info-cards .info-cards__inside .info-cards__items {
-    display: flex;
-    justify-content: space-between; }
-    .info-cards .info-cards__inside .info-cards__items .info-card {
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #ccc;
-      height: 180px;
-      width: 310px;
-      text-decoration: none;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0 0; }
-      .info-cards .info-cards__inside .info-cards__items .info-card .info-card__inside {
-        font-family: Damion, sans-serif;
-        font-size: 40px;
-        text-align: center;
-        color: #fff;
-        width: 160px;
-        line-height: 31px; }
-    .info-cards .info-cards__inside .info-cards__items .info-card.voluntario {
-      background-image: url(../img/bg-seja-voluntario.png); }
-    .info-cards .info-cards__inside .info-cards__items .info-card.faq {
-      background-image: url(../img/bg-perguntas-frequentes.png); }
-    .info-cards .info-cards__inside .info-cards__items .info-card.apoiador {
-      background-image: url(../img/bg-seja-apoiador.png); }
-      .info-cards .info-cards__inside .info-cards__items .info-card.apoiador .info-card__inside {
-        position: relative;
-        right: -20px; }
-
 .site-header:after {
   position: absolute;
   content: "";
@@ -702,3 +630,112 @@ body {
     cursor: pointer; }
   .slick-dots li.slick-active button {
     background: #72b9f5; }
+
+@media only screen and (min-width: 75rem) {
+  .doe-opts {
+    padding: 70px 0; }
+    .doe-opts .doe-opts__inside .doe-opts__items {
+      display: flex;
+      justify-content: space-between; }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.hospital .doe-opts__item-icon {
+        background-image: url(../img/icon-hospitalar.png); }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.hospital .doe-opts__item-title h3 span {
+        position: absolute;
+        left: 70px;
+        top: -4px; }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.paraisopolis .doe-opts__item-icon {
+        background-image: url(../img/icon-paraisopolis.png); }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.paraisopolis .doe-opts__item-title h3 span {
+        position: absolute;
+        left: 56px;
+        top: -7px; }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.einstein .doe-opts__item-icon {
+        background-image: url(../img/icon-residencial.png); }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.einstein .doe-opts__item-title h3 span {
+        position: absolute;
+        left: 90px;
+        top: -5px; }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.recursos .doe-opts__item-icon {
+        background-image: url(../img/icon-recursos.png); }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item.recursos .doe-opts__item-title h3 span {
+        position: absolute;
+        left: 80px; }
+      .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item {
+        max-width: 300px;
+        text-align: center;
+        padding: 20px 30px; }
+        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-icon {
+          width: 90px;
+          height: 90px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain; }
+        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title {
+          position: relative; }
+          .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title h3 span {
+            font-family: Roboto, sans-serif;
+            color: #72b9f5;
+            font-size: 20px;
+            display: block; }
+          .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-title h3 strong {
+            display: block;
+            font-family: Damion, sans-serif;
+            font-size: 40px;
+            color: #f88f9e;
+            margin-top: 20px; }
+        .doe-opts .doe-opts__inside .doe-opts__items .doe-opts__item .doe-opts__item__inside .doe-opts__item-text {
+          font-size: 15px;
+          font-family: Roboto, sans-serif;
+          color: #005a9b; }
+    .doe-opts .doe-opts__inside .doe-opts__cta {
+      padding-top: 20px; }
+      .doe-opts .doe-opts__inside .doe-opts__cta a.doe-opts__cta-button {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        font-size: 35px;
+        color: #fff;
+        background: #72b9f5;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px;
+        font-family: Damion, sans-serif; } }
+
+.programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__header {
+  text-align: right;
+  margin-top: -120px;
+  position: relative;
+  margin-right: -90px; }
+  .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__header h1 {
+    display: flex;
+    flex-direction: column; }
+    .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__header h1 span {
+      color: #72b9f5;
+      font-family: Roboto, sans-serif;
+      font-size: 43px;
+      position: relative;
+      top: 31px;
+      right: 71px; }
+    .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__header h1 strong {
+      font-family: Damion, sans-serif;
+      font-size: 90px;
+      color: #f88f9e; }
+
+.programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__body {
+  display: flex; }
+  .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__body .programa-paraisopolis__image {
+    width: 40%; }
+    .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__body .programa-paraisopolis__image img {
+      position: relative;
+      margin-top: -120px; }
+  .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__body .programa-paraisopolis__content {
+    width: 60%;
+    color: #005a9b;
+    font-family: Roboto, sans-serif;
+    padding: 50px 0 0 20px;
+    position: relative;
+    right: -41px; }
+    .programa-paraisopolis .programa-paraisopolis__inside .programa-paraisopolis__body .programa-paraisopolis__content p {
+      margin-bottom: 30px; }
